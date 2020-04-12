@@ -1,0 +1,54 @@
+commit f13a9a90ea86c2c6d6043010a8c278b6263a26af
+tree 62c3306048925210f28e8974173c5300238ec61c
+parent 6259694211c723ee977a973e495e1b069d3261af
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:42:58 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:42:58 +0100
+
+    Create inventory.yml
+
+:000000 100644 0000000000000000000000000000000000000000 b376b5863a4abad9b3a99714716c0dc2132e1fc3 A	inventory.yml
+commit 6259694211c723ee977a973e495e1b069d3261af
+tree 210e61231ac54dadac98a45349e705003ea24058
+parent 28275f9dccb32e263e4174711ab18be61bf32357
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:42:02 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:42:02 +0100
+
+    Delete inventory
+
+:100644 000000 b376b5863a4abad9b3a99714716c0dc2132e1fc3 0000000000000000000000000000000000000000 D	inventory
+commit 28275f9dccb32e263e4174711ab18be61bf32357
+tree 5c6d7c7d08a0cfc7d8f76582e6971d5d08237bfa
+parent 86372c16abd4a702d4f5ae0a5cd4e7180d9bf26f
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:41:36 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:41:36 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 b9238ed82f4dc79e38f6ee9bc96bf73005849885 9b7f5ab970805bcc6247b06f403e472fda4e45b6 M	Jenkinsfile
+commit 86372c16abd4a702d4f5ae0a5cd4e7180d9bf26f
+tree 5832c6d9f5015df2f85a130591874053a5e95430
+parent e06b2a0f574ab9503f66857f3fda3f6f35b0c200
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:41:03 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:41:03 +0100
+
+    Update playbook.yml
+
+:100644 100644 5169ac8d3e30f7911d46ca2ee22e6899b7f30736 cdb3eb41cc390fe64e371e21a855f0c3af8f4752 M	playbook.yml
+commit e06b2a0f574ab9503f66857f3fda3f6f35b0c200
+tree 5798569d0083e37a77cee20536b3681aa208a237
+parent 689aae58add83a91d133ae6351a3c3576a8ddf71
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:40:19 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:40:19 +0100
+
+    Create inventory
+
+:000000 100644 0000000000000000000000000000000000000000 b376b5863a4abad9b3a99714716c0dc2132e1fc3 A	inventory
+commit 689aae58add83a91d133ae6351a3c3576a8ddf71
+tree 9afb564720709732e84f77091ad9272ff839c14a
+parent 078244cd00302662de32dee920566f7faf43820d
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:39:58 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:39:58 +0100
+
+    Delete hosts
+
+:100644 000000 2a0d479d88ec30e3801ab13ef61f21a8af31c79a 0000000000000000000000000000000000000000 D	hosts

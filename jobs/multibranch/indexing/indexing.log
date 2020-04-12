@@ -1,0 +1,34 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[Mon Mar 30 20:32:49 UTC 2020] Starting branch indexing...
+
+Unable to detect if it is a mirror or not still fetching MRs anyway...
+
+Checking branches.. 
+
+Checking branch [8mha:////4NumGW1kpMl/odUc27Is3+4DTW3aw4mbcoqFS6WDd4pmAAAAuR+LCAAAAAAAAP9djkEKwjAURL8tegCX4hXa7FwoBcGNQnHjymXaftJomoTkp7TX8Bq68RAexztYqStnM8PAPObxhql3sKxD5Y1OS6O9UZjue4tOSX09GsJVdn9mN/uKIDrATKEWVOcQB6cI5vmFt5wprgU7kZNabDoHiz/cbvQvDEZNIoDODiEm2NZE1q8ZE5IUL4ZVw84meG9C/+uSJiiSheO6rBMrLQ7fkJFDZBW2H5unPlDFAAAA[0mdev
+      ‘Jenkinsfile’ found
+Met criteria
+No changes detected: dev (still at 4de3d2ddde10ba5357b601991794293a81ca4bb0)
+
+Checking branch [8mha:////4MhQVHPtsL1bFOjFUqQwXJBoyiA66w2sYxiAs5zyc9LtAAAAuR+LCAAAAAAAAP9djrENwjAURD9BZABKxAqJOwpQqjQgRTRUlE74sg2ObdnfKFmDNaBhCMZhB4JCxTV3Oume7vGGWfCwlPEUrMkba4LVmG97h14rc9lbwlVxfxY390og2UGq0QiSFUyj1wTz6syvnGluBDuQV0ZsOg+LP1w5+hcGoyYJQOeGkBKUksiFNWNCkeb1sGrZ0cYQbOx/XdZGTar23DQyc8rh8A0ZeUTW8kDoPz7wcpXIAAAA[0mmaster
+      ‘Jenkinsfile’ found
+Met criteria
+No changes detected: master (still at 72495e6e29814f865cea99a4c0b9139950971e01)
+
+Checking branch [8mha:////4A6lUHDkbnwIB0c3ZmtpefxOnKKCpykcEkt0a76qJPU4AAAAuR+LCAAAAAAAAP9dTjEOwjAQO4qAnRHxhTYbA6gTDCBVLEyMaTk1gTSJkgtqv8E3YOERPIc/EFQmvNiybMuPN4y8g7kIJ290VhntjcJs21l0SurL3hAu8vszv9lXAskOxgp1TaKAYXCKYFqc+ZUzxXXNDuSkrletg9nf3Lrn7xj0GCQArY1iQrARRNYvGaslKV7GVsOOJnhvQvfz0iYokqXjuhKplRbjN2TkEFkMNlzzDwtBdgLJAAAA[0mousmana
+      ‘Jenkinsfile’ found
+Met criteria
+Scheduled build for branch: ousmana
+
+Checking branch [8mha:////4M+fPxzzndHiZWq6GKDkkM6Q9pdPdi4A4DcchvKM/uy6AAAAuB+LCAAAAAAAAP9dTjsOwjAUe5TPARgRV2izMYA6IBaQKhYmxrQ8NYE0iZIX1F6Da8DCITgOdyCoTHixZdmWH28YewdzEU7e6Kwy2huF2baz6JTUl70hXOT3Z36zrwSSHUwU6ppEAcPgFMG0OPMrZ4rrmh3ISV2vWgezv7lNz98x6DFIAFobxYhgLYisXzJWS1K8jK2GHU3w3oTu56VNUCRLx3UlUistxm/IyCGyLiY/nzAq98YAAAA=[0myous
+      ‘Jenkinsfile’ found
+Met criteria
+Scheduled build for branch: yous
+
+4 branches were processed
+
+Checking merge requests..
+
+0 merge requests were processed
+[Mon Mar 30 20:32:53 UTC 2020] Finished branch indexing. Indexing took 3.7 sec
+Finished: SUCCESS

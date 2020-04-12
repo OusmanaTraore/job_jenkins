@@ -1,0 +1,53 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.38">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.biouno.unochoice.ChoiceParameter plugin="uno-choice@2.2.2">
+          <name>TAG_IMAGE</name>
+          <description></description>
+          <randomName>choice-parameter-30113421771379</randomName>
+          <visibleItemCount>1</visibleItemCount>
+          <script class="org.biouno.unochoice.model.GroovyScript">
+            <secureScript plugin="script-security@1.71">
+              <script>import  groovy.json.JsonSlurper;
+def jsonSlurper = new JsonSlurper()
+def nfile = &quot;curl -s https://gitlab.com/api/v4/projects/17707899/registry/repositories/996381/tags&quot; .execute().text
+result = jsonSlurper.parseText(nfile);
+return result.name</script>
+              <sandbox>false</sandbox>
+            </secureScript>
+            <secureFallbackScript plugin="script-security@1.71">
+              <script></script>
+              <sandbox>false</sandbox>
+            </secureFallbackScript>
+          </script>
+          <projectName>RunImageByList</projectName>
+          <projectFullName>RunImageByList</projectFullName>
+          <choiceType>PT_SINGLE_SELECT</choiceType>
+          <filterable>false</filterable>
+          <filterLength>1</filterLength>
+        </org.biouno.unochoice.ChoiceParameter>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.14"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node {
+    def IMAGE = &quot;registry.gitlab.com/youssouy/docker-gitlab/&quot;
+    def RUN=&quot;${IMAGE}:${TAG_IMAGE}&quot;
+    sh &quot;echo Lancement de &apos;${IMAGE}&apos; ...&quot;
+    docker.image(&quot;${IMAGE}&quot;).withRun(&apos;-p 8085:8085  --name -${TAG_IMAGE}&apos;){c -&gt;
+        sh &apos;docker ps&apos;
+        sh &apos;sleep 10&apos;
+        sh &apos;curl localhost&apos;
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

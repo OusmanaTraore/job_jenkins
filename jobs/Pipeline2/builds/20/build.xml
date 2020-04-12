@@ -1,0 +1,173 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.6.0">
+      <stagesUUID>5e3c2292-a304-4a5d-af0d-909bd284abde</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.6.0">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Build</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">cat /etc/nginx/conf.d/default.conf</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>5e3c2292-a304-4a5d-af0d-909bd284abde</uuid>
+          </stages>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
+              <variables class="linked-hash-map">
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>image</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">nginx:latest</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>args</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">-p 8082:8082</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+              </variables>
+            </variables>
+            <agentType>
+              <key>docker</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.docker.workflow.ImageAction plugin="docker-workflow@1.23">
+      <names class="sorted-set">
+        <string>nginx:latest</string>
+      </names>
+    </org.jenkinsci.plugins.docker.workflow.ImageAction>
+  </actions>
+  <queueId>91</queueId>
+  <timestamp>1585068974326</timestamp>
+  <startTime>1585068974330</startTime>
+  <result>SUCCESS</result>
+  <duration>45523</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    agent {
+        docker {
+            image &apos;nginx:latest&apos;
+            args &apos;-p 8082:8082&apos;
+        }
+    }
+    stages {
+        stage (&apos;Build&apos;){
+            steps {
+                sh &apos;cat /etc/nginx/conf.d/default.conf&apos;
+            }
+        }
+    }
+}
+//node {
+//    docker.image(&apos;nginx:latest&apos;).withRun(&apos;-p 8082:8082&apos;) { 
+  //    sh &quot;docker ps&quot;
+    //  sh &quot;curl localhost:8081&quot;
+    //}
+        
+//    stages {
+  //       stage (&apos;Nettoyage du repertoire&apos;) {
+    //        steps {
+      //          sh &quot;  rm -Rf /var/lib/jenkins/workspace/Pipeline2/* &quot; 
+        //    }
+         //}
+           // stage (&apos;Clone&apos;) {
+            //steps {
+              //  sh &quot;git clone https://github.com/OusmanaTraore/JenkinsPipeline.git &quot;
+            //}
+        //}
+        //stage (&apos;Build&apos;) {
+          //  steps {
+            //    sh &quot;cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/ &amp;&amp; javac org/example/demo/App.java&quot;
+           //}           
+        //}
+        //stage (&apos;Run&apos;) {
+          //  steps {
+            //    sh &quot; cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/  &amp;&amp; java org/example/demo/App  &quot;
+            //}
+        //}
+    //}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>563117772</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>27872811814</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>36070393899</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2454673402</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1930063783</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>18</iota>
+    <head>1:18</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,71 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running in Durability level: MAX_SURVIVABILITY
+Loading library jenkins_lib@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+ > git ls-remote -h https://gitlab.com/Youssouy/jenkins_lib.git # timeout=10
+Found match: refs/heads/master revision 243c39b9c6da86cf3b10673e6dcc9c49cd8206b3
+No credentials specified
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://gitlab.com/Youssouy/jenkins_lib.git
+ > git init /var/lib/jenkins/workspace/test_lib@libs/jenkins_lib # timeout=10
+Fetching upstream changes from https://gitlab.com/Youssouy/jenkins_lib.git
+ > git --version # timeout=10
+ > git fetch --no-tags --progress https://gitlab.com/Youssouy/jenkins_lib.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gitlab.com/Youssouy/jenkins_lib.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://gitlab.com/Youssouy/jenkins_lib.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://gitlab.com/Youssouy/jenkins_lib.git
+ > git fetch --no-tags --progress https://gitlab.com/Youssouy/jenkins_lib.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 243c39b9c6da86cf3b10673e6dcc9c49cd8206b3 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 243c39b9c6da86cf3b10673e6dcc9c49cd8206b3 # timeout=10
+Commit message: "ajout des fichiers"
+First time build. Skipping changelog.
+[8mha:////4IyW93jWyO59qBeaU5pndx4HH+zY3BYWK6wVTdaBOHKuAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IstEzcFK7o5YfCm6ipINP74HMkQMwDHHhFNBN7eW67JAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QdLdtVavAAAAA==[0m[Pipeline] End of Pipeline
+org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException: No such getAt method found: method helloWorld[java.util.ArrayList]
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onGetArray(SandboxInterceptor.java:479)
+	at org.kohsuke.groovy.sandbox.impl.Checker$11.call(Checker.java:484)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedGetArray(Checker.java:489)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.getArray(SandboxInvoker.java:45)
+	at com.cloudbees.groovy.cps.impl.ArrayAccessBlock.rawGet(ArrayAccessBlock.java:21)
+	at WorkflowScript.run(WorkflowScript:1)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:74)
+	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.CollectionLiteralBlock$ContinuationImpl.dispatch(CollectionLiteralBlock.java:55)
+	at com.cloudbees.groovy.cps.impl.CollectionLiteralBlock$ContinuationImpl.access$000(CollectionLiteralBlock.java:31)
+	at com.cloudbees.groovy.cps.impl.CollectionLiteralBlock.eval(CollectionLiteralBlock.java:26)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:18)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:51)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:185)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:400)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$400(CpsThreadGroup.java:96)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:312)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:276)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Finished: FAILURE

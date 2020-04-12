@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.37">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.6.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.6.0">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.29.5">
+      <projectUrl>https://github.com/OusmanaTraore/JenkinsPipeline.git/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.13"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>pipeline {
+    agent {
+        docker {
+            image &apos;nginx:latest&apos;
+            args &apos;-p 8082:8082&apos;
+        }
+    }
+    stages {
+        stage (&apos;Build&apos;){
+            steps {
+                sh &apos;cat /etc/nginx/conf.d/default.conf&apos;
+            }
+        }
+    }
+}
+//node {
+//    docker.image(&apos;nginx:latest&apos;).withRun(&apos;-p 8082:8082&apos;) { 
+  //    sh &quot;docker ps&quot;
+    //  sh &quot;curl localhost:8081&quot;
+    //}
+        
+//    stages {
+  //       stage (&apos;Nettoyage du repertoire&apos;) {
+    //        steps {
+      //          sh &quot;  rm -Rf /var/lib/jenkins/workspace/Pipeline2/* &quot; 
+        //    }
+         //}
+           // stage (&apos;Clone&apos;) {
+            //steps {
+              //  sh &quot;git clone https://github.com/OusmanaTraore/JenkinsPipeline.git &quot;
+            //}
+        //}
+        //stage (&apos;Build&apos;) {
+          //  steps {
+            //    sh &quot;cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/ &amp;&amp; javac org/example/demo/App.java&quot;
+           //}           
+        //}
+        //stage (&apos;Run&apos;) {
+          //  steps {
+            //    sh &quot; cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/  &amp;&amp; java org/example/demo/App  &quot;
+            //}
+        //}
+    //}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

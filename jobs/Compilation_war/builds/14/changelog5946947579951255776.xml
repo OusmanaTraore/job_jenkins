@@ -1,0 +1,36 @@
+commit 543c9c179f613fe2379a72355c35a73a49bfaa50
+tree 13545d60260bf289b4ecc6d808d6b94ed98ff427
+parent b605ff88c29c0cf70993f7b7b5ae6e66ec12593b
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:40:04 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:40:04 +0100
+
+    Update inventory.yml
+
+:100644 100644 c29251b65a76852834a2815c58265649a5aec0d4 1e15920736f8e5c5490549365043e8631ac21159 M	inventory.yml
+commit b605ff88c29c0cf70993f7b7b5ae6e66ec12593b
+tree 67760c4067e70e54e9cbd31f69617369af08a3eb
+parent 7a32c12aa101ed2b4fcfb0c34c36c827f2387652
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:38:34 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:38:34 +0100
+
+    Update playbook.yml
+
+:100644 100644 febd3736498ce284605be413de15c3b01507958b e35a1bb84d20c1f3c996cf945d68361e46c92a01 M	playbook.yml
+commit 7a32c12aa101ed2b4fcfb0c34c36c827f2387652
+tree 52523a8d5b733aec00d7fbb9345366d2fb74947c
+parent b6bec399f165692707550f8c1b5af824c1a93d48
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:37:50 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:37:50 +0100
+
+    Update playbook.yml
+
+:100644 100644 fd9aee3c55bf43bfbbccaa97a4806be032c8993e febd3736498ce284605be413de15c3b01507958b M	playbook.yml
+commit b6bec399f165692707550f8c1b5af824c1a93d48
+tree 4212deae5090b980f0374a835b929e9022603f38
+parent ea29286d562c76f730c868538ea62c6cf8e95d93
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:35:22 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:35:22 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 0f9f4d90d4afe39fd623bcc70158da2fe6993a5c 9a7416f6026e1dce36fc4b1b3a9882510b58eac8 M	Jenkinsfile

@@ -1,0 +1,157 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@4.2.2">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.2.1">
+              <sha1>8a4360f99358bf19b33bc2c19017c22039cb14cd</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>5</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/OusmanaTraore/docker-jenkinsfile.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.2.2">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/warTest</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/OusmanaTraore/docker-jenkinsfile.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.7.0"/>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.3.5">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+  </actions>
+  <queueId>130</queueId>
+  <timestamp>1585186265210</timestamp>
+  <startTime>1585186265231</startTime>
+  <result>SUCCESS</result>
+  <duration>67091</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node{
+    
+    def registryProject=&apos;registry.gitlab.com/youssouy/docker-gitlab&apos;
+    def IMAGE= &quot;${registryProject}:version-${env.BUILD_ID}&quot;
+    
+    stage(&apos;Clone&apos;){
+        git &apos;https://github.com/OusmanaTraore/docker-jenkinsfile.git&apos;
+    }
+    def img = stage (&apos;Build&apos;){
+        docker.build(&quot;$IMAGE&quot;, &apos;.&apos;)
+    }
+    stage (&apos;Run&apos;){
+        img.withRun(&quot;--name run-$BUILD_ID -p 80:80&quot;) { 
+        sh &apos;curl localhost&apos;
+        }
+    }
+    stage (&apos;Push&apos;) {
+        docker.withRegistry(&apos;https://registry.gitlab.com&apos;, &apos;reg1&apos;) {
+            img.push &apos;latest&apos;
+            img.push()
+        } 
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>558339546</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4991503906</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>7252579989</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>719704456</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1433118282</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>47</iota>
+    <head>1:47</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/OusmanaTraore/docker-jenkinsfile.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/workspace/warTest</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

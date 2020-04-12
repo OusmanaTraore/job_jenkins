@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>30</string>
+    </parentIds>
+    <id>31</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>docker stop ec72defefa84d9b3dc917e3ced275b4e7663df358ac8d993c6f423adc58f456a &amp;&amp; docker rm -f ec72defefa84d9b3dc917e3ced275b4e7663df358ac8d993c6f423adc58f456a</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1585230933039</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

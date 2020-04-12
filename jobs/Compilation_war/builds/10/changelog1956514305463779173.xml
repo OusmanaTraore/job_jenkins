@@ -1,0 +1,9 @@
+commit 9f31c922561defef5e0204e79549bd4a0182e23c
+tree 18ddd8573f3bfb50e8131d02f65e0bd24a355eec
+parent 1e4c1db196bd66592fc8aa449ce201051689aa68
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:04:49 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:04:49 +0100
+
+    Update hosts.yml
+
+:100644 100644 31f4bab3a0fdab3b5cef1f409178811fabf07a1b aeb9dedd9bf0d59794057283cd7e9bf098f6eadf M	hosts.yml

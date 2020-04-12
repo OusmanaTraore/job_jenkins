@@ -1,0 +1,9 @@
+commit 071549de5f9d3fecb07522c2940350b82bd62d38
+tree 591d0a20d48ad609210530e6d700f83ccb3eedc7
+parent e24cbaf7dde92115508735e2fd948db9bb389f88
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-26 14:01:22 +0100
+committer GitHub <noreply@github.com> 2020-03-26 14:01:22 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 a8e5abeec73dcb475124d836ad1689bc6d726b20 4c288dd1a4095ff6778a142b5b40e5bc94475386 M	Jenkinsfile

@@ -1,0 +1,9 @@
+commit ea29286d562c76f730c868538ea62c6cf8e95d93
+tree f58ccb7f636dceabc5433f6349945ab7f3d08f57
+parent 8b0ede1ee74d9185ddc2fe8c818a166c6378c3e4
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 20:31:35 +0100
+committer GitHub <noreply@github.com> 2020-03-28 20:31:35 +0100
+
+    Create inventory.yml
+
+:000000 100644 0000000000000000000000000000000000000000 c29251b65a76852834a2815c58265649a5aec0d4 A	inventory.yml

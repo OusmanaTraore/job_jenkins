@@ -1,0 +1,18 @@
+commit fe4fadf7a7b237083643882730a61b4135ed3812
+tree 5f2fffe140f75dfb83bcdfc7fe5869c6bc2fd5be
+parent fe27ef1aac2c9b9bd587cd07d55885ed714e4858
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:46:17 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:46:17 +0100
+
+    Update playbook.yml
+
+:100644 100644 cdb3eb41cc390fe64e371e21a855f0c3af8f4752 5169ac8d3e30f7911d46ca2ee22e6899b7f30736 M	playbook.yml
+commit fe27ef1aac2c9b9bd587cd07d55885ed714e4858
+tree a6c9861f5fb91bbfdfc922b7dbd04c1bf59c3249
+parent f13a9a90ea86c2c6d6043010a8c278b6263a26af
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:45:52 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:45:52 +0100
+
+    Update inventory.yml
+
+:100644 100644 b376b5863a4abad9b3a99714716c0dc2132e1fc3 4c77218df692e072fecb020e51622edd9cf5c80c M	inventory.yml

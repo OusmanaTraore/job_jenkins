@@ -1,0 +1,9 @@
+commit aafea8f863d2967e71387d8b07397719d4aed6a5
+tree a7f05c98f7b3e36bdeeffa4da8b108b36e577d45
+parent c5fef27df5894dbd900bf79cadbd3a04790dc8d1
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 21:34:24 +0100
+committer GitHub <noreply@github.com> 2020-03-28 21:34:24 +0100
+
+    Update main.yml
+
+:100644 100644 3f9faf0cf8ea34eb577c0dc08c6da6aedd022cb6 289f0bca409bed80c8e970a454a7ba17e3fb749b M	roles/wartest/tasks/main.yml

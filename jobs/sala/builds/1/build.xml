@@ -1,0 +1,63 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.38">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>94</queueId>
+  <timestamp>1585524001680</timestamp>
+  <startTime>1585524001692</startTime>
+  <result>FAILURE</result>
+  <duration>16602</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node (&quot;serveur2_Slave&quot;){
+sh &apos;variable= test &apos;
+sh &apos;echo $variable&apos;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>525892179</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>746901615</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>8725604730</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>4997957573</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1058102580</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>8</iota>
+    <head>1:8</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

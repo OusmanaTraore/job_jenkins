@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.gitlabbranchsource.BranchSCMRevision plugin="gitlab-branch-source@1.4.4">
+  <head class="io.jenkins.plugins.gitlabbranchsource.BranchSCMHead">
+    <name>yous</name>
+  </head>
+  <hash>0c663e4e13a8955fcdfcd75e8f8d6f2635648218</hash>
+</io.jenkins.plugins.gitlabbranchsource.BranchSCMRevision>

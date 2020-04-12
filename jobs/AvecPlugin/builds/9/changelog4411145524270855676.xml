@@ -1,0 +1,18 @@
+commit 445c295101c63f0d44635bc5d566e6fa75732c13
+tree bb82d4af86779c3d160fb5bd37298ccb894141b8
+parent b5aca107438a044273907ca333b8cd98cd1e5774
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:54:22 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:54:22 +0100
+
+    Update inventory.yml
+
+:100644 100644 546937c31efdbda65c3a54f4d768dfcfcf05358d 45e67f72c68d98fa797d0227ca3ec6630001a936 M	inventory.yml
+commit b5aca107438a044273907ca333b8cd98cd1e5774
+tree 837fc3b48556db9a308f75635a53e6172c9a87f7
+parent 93dd6a1debe6e5026ec5c0c171819db0ea3a33c7
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:53:50 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:53:50 +0100
+
+    Update inventory.yml
+
+:100644 100644 5795c8aa7a78d02799dee886cff7675048e7084b 546937c31efdbda65c3a54f4d768dfcfcf05358d M	inventory.yml

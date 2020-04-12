@@ -1,0 +1,74 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IyW93jWyO59qBeaU5pndx4HH+zY3BYWK6wVTdaBOHKuAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4PDiIU2FOyNJcVXpMICKVJBYIzD3XYzTZuCKjUBl5rsqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MRAFkGYLQ0z0FnyFmY2FusT/8ZTBOL8YMgvkY0P83rzAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Pipeline2
+[8mha:////4MczR+vu4Wt1fXALgBa9pmfv0HrsvpVDoC4bux78RtNdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AEBYTJN0waNscap2jvJk3OgC+k/VuDcLVXMLnJ1ER8XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] isUnix
+[8mha:////4DviqqoJlagUGjydUPO4wII1RKH9C/8gIxEX7mCTXDDUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED+qfHravAAAAA==[0m[Pipeline] sh
++ docker inspect -f . nginx:latest
+.
+[8mha:////4KxielP5XjbqirX856PiaM12+eMQPCKN+6iMV0RTKk2bAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0QWJATKxRFk4QkhDSRv+3SUo7cSKuxh0IVGLCkiXbkvWeL6hThCNFx1uLncekPe/D6EriE8XuGmjiLV24JkwULJd2kmTsaamSsoVFrIKVgLVFHSh5dBk2olV31QSFrjnnWLaDgMqbAR7ARCFnFfO3zBG2t9Ekwh/nLwDmPgPbFe8/v/oNP1aWNcAAAAA=[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 996:993 -p 8082:8082 -w /var/lib/jenkins/workspace/Pipeline2 -v /var/lib/jenkins/workspace/Pipeline2:/var/lib/jenkins/workspace/Pipeline2:rw,z -v /var/lib/jenkins/workspace/Pipeline2@tmp:/var/lib/jenkins/workspace/Pipeline2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** nginx:latest cat
+$ docker top 2a3b0eaafb00f461abef221a53245314e6073c8316dd7fcd18fa39a456648fcf -eo pid,comm
+[8mha:////4MvPRWTp3rFzilpsN/M5CXe4TFRdMIdYDkQRvVN6qxKIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4C+bqiKa7yTv8i2tTFwhOM/5taHWl7CZ5dTBbVr2VH2iAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4NED3pnhoJLXBxC81WIxJAlVhTgtNKkkBz9K9LaRMegTAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Build)
+[8mha:////4FEXgRu6PO9kRnIvRdCZDS7FPzyP2gzwNe9sdlYCO75iAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] sh
++ cat /etc/nginx/conf.d/default.conf
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+
+[8mha:////4EpaH43zp727NCgPMN9VGy7hEpSPWqhMq0siY2e81UD0AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMYQM5W7/qe0bsgYiW74AAAA=[0m[Pipeline] }
+[8mha:////4PzsmfpGoy96ZWZB6mRrcrjkeyJkfZtEy6Eey17XCQHVAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP6C1U670AAAA=[0m[Pipeline] // stage
+[8mha:////4GscjKf2u6Oln/xCKk6sIKZBt0Jea4WdsANPbmGE1ihIAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREgUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBNn+A27Bcy69AAAA[0m[Pipeline] }
+$ docker stop --time=1 2a3b0eaafb00f461abef221a53245314e6073c8316dd7fcd18fa39a456648fcf
+$ docker rm -f 2a3b0eaafb00f461abef221a53245314e6073c8316dd7fcd18fa39a456648fcf
+[8mha:////4CgQylAKy+kQxIY/1VnWS5yTvX8STesCEdKGr0OJwbVFAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBaJAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AE/1rIO9AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4GCocd56DTBAoSUOVGwCeqg2StzJMIQu1M67mzxm0/JGAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9ACXeBV29AAAA[0m[Pipeline] }
+[8mha:////4EBDXkYyWHMcuMz5Scr9aMFnHZRybq6ZP1c2vKKcovPlAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRoqBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9ADZiAf69AAAA[0m[Pipeline] // node
+[8mha:////4COaHrssImav4A5Zm5KCfkpwXO1IdcuLUAPepO/EVt8lAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRVEiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPccVWC70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

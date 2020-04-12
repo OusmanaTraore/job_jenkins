@@ -1,0 +1,9 @@
+commit 0947a18f19e70d3f9c17de57fa9a291f30454e3b
+tree 328b382759c912432d01a45d272adc700be4d2b2
+parent 591ede1f5270cdd0177ac7715849e3f53a3ce17b
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 18:20:21 +0100
+committer GitHub <noreply@github.com> 2020-03-27 18:20:21 +0100
+
+    Create Jenkinsfile
+
+:000000 100644 0000000000000000000000000000000000000000 30c5886864baabe780ce12f7593c5158a7f68819 A	Jenkinsfile

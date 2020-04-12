@@ -1,0 +1,86 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Obtained Jenkinsfile from git https://github.com/OusmanaTraore/ansible-jenkins-git.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IyW93jWyO59qBeaU5pndx4HH+zY3BYWK6wVTdaBOHKuAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4PDiIU2FOyNJcVXpMICKVJBYIzD3XYzTZuCKjUBl5rsqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MRAFkGYLQ0z0FnyFmY2FusT/8ZTBOL8YMgvkY0P83rzAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/AvecPlugin
+[8mha:////4MczR+vu4Wt1fXALgBa9pmfv0HrsvpVDoC4bux78RtNdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AEjN429pcz4wrXtGmCDthpwCpfnl3vihw/g141XYWmpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4KETScqoLWBc32muqQQLJ53CeacN/vkLQ1MNeDI+deSzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Clone)
+[8mha:////4BOSzIvnk27A61WGm2g+B5G95mNyRrFCPhenX//PhGVoAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/OusmanaTraore/ansible-jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/OusmanaTraore/ansible-jenkins.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/OusmanaTraore/ansible-jenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 004f20382bfd70f2577548c50abdb2cd3fa02376 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 004f20382bfd70f2577548c50abdb2cd3fa02376 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 004f20382bfd70f2577548c50abdb2cd3fa02376 # timeout=10
+Commit message: "Create index.html.j2"
+ > git rev-list --no-walk 29d3489ba917468f773d0fb0395768aa56c2e055 # timeout=10
+[8mha:////4MjkbpsSx3qpTRIIVZavaexIBz+7oQqSCGUH7l9Ah3KeAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4OxxXDk9NYbCHLsc2ExduXYcelxlyo8V+TPSIYqT8JE7AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4LRZjzBHCUOTCQ0vjSAEcdCisuS+5LtQPLWolf8+PttOAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4EQvRcolv0aspf4pbxPCgVK5enYFLMVbPQ3j9LQ7XTMtAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Ansible)
+[8mha:////4KXun3tNczxBqD/ylJ24834qmQJ91F34Bn7xOcYtFwIrAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] ansiblePlaybook
+[AvecPlugin] $ ansible-playbook playbook.yml -i inventory.yml -b --become-user root --extra-vars mavariable=${MAVARIABLE}
+[1;35m[WARNING]: While constructing a mapping from[0m
+[1;35m/var/lib/jenkins/workspace/AvecPlugin/nginx/meta/main.yml, line 1, column 1,[0m
+[1;35mfound a duplicate dict key (galaxy_info). Using last defined value only.[0m
+[1;35m[0m[1;35m[WARNING]: Found variable using reserved name: become[0m
+[1;35m[0m
+PLAY [server] ******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Include OS-specific variables.] **********************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Define nginx_user.] **********************************************
+[0;36mskipping: [serveur3_Test][0m
+[0;36m[0m
+TASK [nginx : include_tasks] ***************************************************
+[0;36mincluded: /var/lib/jenkins/workspace/AvecPlugin/nginx/tasks/setup-RedHat.yml for serveur3_Test[0m
+[0;36m[0m
+TASK [nginx : Enable nginx repo.] **********************************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Ensure nginx is installed.] **************************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Remove default nginx vhost config file (if configured).] *********
+[0;36mskipping: [serveur3_Test][0m
+[0;36m[0m
+TASK [nginx : Ensure nginx_vhost_path exists.] *********************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Add managed vhost config files.] *********************************
+
+TASK [nginx : Remove managed vhost config files.] ******************************
+
+TASK [nginx : Remove legacy vhosts.conf file.] *********************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Copy nginx configuration in place.] ******************************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+TASK [nginx : Ensure nginx service is running as configured.] ******************
+[0;32mok: [serveur3_Test][0m
+[0;32m[0m
+PLAY RECAP *********************************************************************
+[0;32mserveur3_Test[0m              : [0;32mok=9   [0m changed=0    unreachable=0    failed=0    [0;36mskipped=4   [0m rescued=0    ignored=0   
+
+[8mha:////4KS9aFGdomtIZz3KKhsacPWe12mMo1a/yi2sWny7OuIIAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4Dgjk4bXH0LwH6L11oIecuLDYeKBemD7y3F344YWfkSzAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // stage
+[8mha:////4P+AMa+XVZ6D9CC37MgdN2kcHrTjssiMfReECO/gyTPxAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRElSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP9aSlGr0AAAA=[0m[Pipeline] }
+[8mha:////4JPJU8ZeLpFkPl5ZpU0TCr7Tt/A8/Djmmn8YKdL/zb+gAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AIZLYcO9AAAA[0m[Pipeline] // node
+[8mha:////4AJ5FceVNDQXCKOnosODy8QM/M31VRbNGcz3DUAXV9vWAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRNBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPoFIGib0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

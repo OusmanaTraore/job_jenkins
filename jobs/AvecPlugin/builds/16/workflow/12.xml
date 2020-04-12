@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>11</string>
+    </parentIds>
+    <id>12</id>
+    <descriptorId>org.jenkinsci.plugins.ansible.workflow.AnsiblePlaybookStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>extras</string>
+          <string>--extra-vars &quot;mavariable=${MAVARIABLE}&quot;</string>
+        </entry>
+        <entry>
+          <string>inventory</string>
+          <string>${HOST},</string>
+        </entry>
+        <entry>
+          <string>colorized</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>become</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>playbook</string>
+          <string>playbook.yml</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1585353712511</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

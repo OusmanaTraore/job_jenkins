@@ -1,0 +1,18 @@
+commit 004f20382bfd70f2577548c50abdb2cd3fa02376
+tree 54ef78e0cc275fcce0426d1ee4d6928f6e9657d3
+parent 0425d0ad6593c35140429b616acb6660885bedb7
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 23:38:10 +0100
+committer GitHub <noreply@github.com> 2020-03-27 23:38:10 +0100
+
+    Create index.html.j2
+
+:000000 100644 0000000000000000000000000000000000000000 73f0977e3947502191819d682f00505f5c90a310 A	nginx/templates/index.html.j2
+commit 0425d0ad6593c35140429b616acb6660885bedb7
+tree 883fe01af2b5874d29aa773125c9a39ff1c54df4
+parent 29d3489ba917468f773d0fb0395768aa56c2e055
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 23:26:59 +0100
+committer GitHub <noreply@github.com> 2020-03-27 23:26:59 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 9b7f5ab970805bcc6247b06f403e472fda4e45b6 7a9434341fc2d6aee0cac295b926a5ba604e2e17 M	Jenkinsfile

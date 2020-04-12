@@ -1,0 +1,18 @@
+commit ce6ffc67d5251ced65f7f9eb7434aeb074c4cb95
+tree 12adb556a45dba71db32d502abfc33a5f167df30
+parent 74b7bd53c37fc47fe21f19bf48990b3d3939f639
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-26 14:51:22 +0100
+committer GitHub <noreply@github.com> 2020-03-26 14:51:22 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 a7386feee31e9bcb1bc30307ff97509ec6da6eab f5718f03a1fef9af46ba5a4289640fba39aea0f6 M	Jenkinsfile
+commit 74b7bd53c37fc47fe21f19bf48990b3d3939f639
+tree defb3470b6a3adc0589245529108085ff24bcf21
+parent 16afa6b812d8ab6ee18e190036af63955c6674bc
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-26 14:50:24 +0100
+committer GitHub <noreply@github.com> 2020-03-26 14:50:24 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 4c288dd1a4095ff6778a142b5b40e5bc94475386 a7386feee31e9bcb1bc30307ff97509ec6da6eab M	Jenkinsfile

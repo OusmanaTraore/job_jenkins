@@ -1,0 +1,31 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IyW93jWyO59qBeaU5pndx4HH+zY3BYWK6wVTdaBOHKuAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4PDiIU2FOyNJcVXpMICKVJBYIzD3XYzTZuCKjUBl5rsqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MRAFkGYLQ0z0FnyFmY2FusT/8ZTBOL8YMgvkY0P83rzAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Pipeline2
+[8mha:////4MczR+vu4Wt1fXALgBa9pmfv0HrsvpVDoC4bux78RtNdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AEBYTJN0waNscap2jvJk3OgC+k/VuDcLVXMLnJ1ER8XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] isUnix
+[8mha:////4DviqqoJlagUGjydUPO4wII1RKH9C/8gIxEX7mCTXDDUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED+qfHravAAAAA==[0m[Pipeline] sh
++ docker run -d -p 8082:8082 nginx:latest
+[8mha:////4DfsHnZC6S6x9M7Ytc2N63LZOHTtAmDDmkapkKqHJOTnAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmFgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHMswPa1h/gB601hw7wAAAA=[0m[Pipeline] sh
++ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                            NAMES
+2dbe2ae15748        nginx:latest        "nginx -g 'daemon of…"   5 seconds ago       Up 1 second         80/tcp, 0.0.0.0:8082->8082/tcp   priceless_visvesvaraya
+3b86b1b73cc4        nginx:latest        "nginx -g 'daemon of…"   6 minutes ago       Up 6 minutes        80/tcp, 0.0.0.0:80->8081/tcp     gracious_yonath
+[8mha:////4OAHFjFOBDInID3nZFQZU5mPGjT2gLyWM2d80JsjJ2g8AAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbWJgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHMswPa1h/gBJFH5RLwAAAA=[0m[Pipeline] sh
++ curl localhost
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (56) Recv failure: Connection reset by peer
+[8mha:////4KbnkjYsTgzA2NvbHo0DJVEei+dMeFPgLO8eD3x3IKjgAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTb2BhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED9lYOJdvAAAAA==[0m[Pipeline] isUnix
+[8mha:////4ES4zEZ3PPhOP6AWoYTGKCWjdUv63MSVri6vZgcc/M/cAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIBiQ5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYO0G2F+S7bfcBVVhdU70AAAA=[0m[Pipeline] sh
++ docker stop 2dbe2ae157486072f17863dcdd608639f08cf91cb73c46d9ce39b569be7ca21f
+2dbe2ae157486072f17863dcdd608639f08cf91cb73c46d9ce39b569be7ca21f
++ docker rm -f 2dbe2ae157486072f17863dcdd608639f08cf91cb73c46d9ce39b569be7ca21f
+2dbe2ae157486072f17863dcdd608639f08cf91cb73c46d9ce39b569be7ca21f
+[8mha:////4JmwC0PSlOQeVLYImWnuzRohZnxCZowCjpcbgCQX4waTAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KExM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8ANQIl770AAAA=[0m[Pipeline] }
+[8mha:////4CxGHQUghALxzfSJEaA01+fRn4cgMSxGwWk+HOeQOtYKAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny7U6Q7T9G7eE2vQAAAA==[0m[Pipeline] // node
+[8mha:////4BcfVRHwlMkWcYDiuqiLrDYY61lPt2Ud59ptMhi3/Q6wAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny7V6Q7T5g9IZ8vQAAAA==[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 56
+Finished: FAILURE

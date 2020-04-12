@@ -1,0 +1,20 @@
+Started by user [8mha:////4KGNeZZwDI4f/YhDYf17S1HXDpDMfSBhfoKrPYzxNkw2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4IyW93jWyO59qBeaU5pndx4HH+zY3BYWK6wVTdaBOHKuAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4PDiIU2FOyNJcVXpMICKVJBYIzD3XYzTZuCKjUBl5rsqAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4MRAFkGYLQ0z0FnyFmY2FusT/8ZTBOL8YMgvkY0P83rzAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/RunImageByList
+[8mha:////4MczR+vu4Wt1fXALgBa9pmfv0HrsvpVDoC4bux78RtNdAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AEBYTJN0waNscap2jvJk3OgC+k/VuDcLVXMLnJ1ER8XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] sh
++ echo Lancement de registry.gitlab.com/youssouy/docker-gitlab/version-5 ...
+Lancement de registry.gitlab.com/youssouy/docker-gitlab/version-5 ...
+[8mha:////4DviqqoJlagUGjydUPO4wII1RKH9C/8gIxEX7mCTXDDUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED+qfHravAAAAA==[0m[Pipeline] isUnix
+[8mha:////4DfsHnZC6S6x9M7Ytc2N63LZOHTtAmDDmkapkKqHJOTnAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmFgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHMswPa1h/gB601hw7wAAAA=[0m[Pipeline] sh
++ docker run -d -p 80:8080 v--name version-compil-29 registry.gitlab.com/youssouy/docker-gitlab/version-5
+Unable to find image 'v--name:latest' locally
+docker: Error response from daemon: pull access denied for v--name, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+[8mha:////4G9EcSu4KI2QbzlBr5NvkSDIMRyM2YX5Pd4hyu+oj20aAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbWJgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8Bb+JmxLwAAAA=[0m[Pipeline] }
+[8mha:////4BVC72olX3WCxJNsk2/gsZ/jxnljBa4+0nekm5ILp7VKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWBljZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j98XmJnvAAAAA==[0m[Pipeline] // node
+[8mha:////4AdfI/I+vzPYViHorVMU/6+Pdax55G1xKeeYc42XS4hjAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiKorWNlm6HxBBFiDGR2MVmEyhN5Ne8gIzNW/uq/17zXG8sUceToVGOp9ZQqr7rQu+mpgWN7DTyohi+qYkocrCrtUHJtTzOWLBbzshwLjZWlKnDy5ARr3ZiHKYIhV5wlTu6gkfv6jicyPZXFRPnCGLG59XVi+nX+BjB2nSDfbQXZ/gOwjiY7vQAAAA==[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 125
+Finished: FAILURE

@@ -1,0 +1,9 @@
+commit adf6c490a83d447aa005e1e6a3ff4d932c716ed5
+tree 37c3cc0755b74ab9ffa3a21a633ea290e39f7609
+parent 8d266076af73e34f57310e27d347e6c5b52fe266
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 01:00:14 +0100
+committer GitHub <noreply@github.com> 2020-03-28 01:00:14 +0100
+
+    Update vhost.j2
+
+:100644 100644 0feb60299bf63ac8c66313bd1ff040b40c008d78 b60345a6593e90916aed372e54d8b84c8d018aa5 M	nginx/templates/vhost.j2

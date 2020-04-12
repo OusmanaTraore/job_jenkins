@@ -1,0 +1,73 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.38">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>TAG_IMAGE</name>
+          <description></description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>TAG_IMAGE</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>64</queueId>
+  <timestamp>1585435068577</timestamp>
+  <startTime>1585435068595</startTime>
+  <result>SUCCESS</result>
+  <duration>158</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script></script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>4673454</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>94493657</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>31479628</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>102660588</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>4440938</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

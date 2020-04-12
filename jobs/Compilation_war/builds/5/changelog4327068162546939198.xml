@@ -1,0 +1,27 @@
+commit 1e4c1db196bd66592fc8aa449ce201051689aa68
+tree 225dcca5eada795552209223163a9b12b09a0868
+parent 6de883ac2107ca9127f49ad9e215863e5f5e2351
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 18:20:13 +0100
+committer GitHub <noreply@github.com> 2020-03-28 18:20:13 +0100
+
+    Update hosts.yml
+
+:100644 100644 43734e31ff5a4b718a9f66e9b638bc046cca4a5f 31f4bab3a0fdab3b5cef1f409178811fabf07a1b M	hosts.yml
+commit 6de883ac2107ca9127f49ad9e215863e5f5e2351
+tree 6c0323ed572964ba74b3ed6f748ecdd42b4cad68
+parent dc6ba4a5b2d3d13e9a203c6764f0a15a2c5dad8c
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 18:19:50 +0100
+committer GitHub <noreply@github.com> 2020-03-28 18:19:50 +0100
+
+    Update hosts.yml
+
+:100644 100644 3fa1514f7c73d0b03469e782d4e7c7687305e18b 43734e31ff5a4b718a9f66e9b638bc046cca4a5f M	hosts.yml
+commit dc6ba4a5b2d3d13e9a203c6764f0a15a2c5dad8c
+tree a655c7311dc9622c98953f42afc3e56e1980a40a
+parent 1f4f1377489d6e87ad99d351bdcccb9cd3177e3a
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 18:12:40 +0100
+committer GitHub <noreply@github.com> 2020-03-28 18:12:40 +0100
+
+    Update hosts.yml
+
+:100644 100644 7115d97f5c7826aa9e13cbb3ce72996542b56fe1 3fa1514f7c73d0b03469e782d4e7c7687305e18b M	hosts.yml

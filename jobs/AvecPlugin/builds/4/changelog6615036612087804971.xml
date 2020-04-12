@@ -1,0 +1,18 @@
+commit c20fb612f2c04fa82cc7f3872c6276c3c60a5398
+tree 45d782c07bf4901c973e5d3150dcba21e07b831c
+parent c1b4c783c6844f74400903f39042d83980e18f7f
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:34:51 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:34:51 +0100
+
+    Delete inventory
+
+:100644 000000 878877b0776c44f55fc4e458f70840f31da5bb01 0000000000000000000000000000000000000000 D	nginx/tests/inventory
+commit c1b4c783c6844f74400903f39042d83980e18f7f
+tree ce6688548a44e364082f5eace70306abb86de263
+parent 11fd49a649f2181473831a0e6cf818cd2fecac76
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-27 22:34:39 +0100
+committer GitHub <noreply@github.com> 2020-03-27 22:34:39 +0100
+
+    Delete test.yml
+
+:100644 000000 3055ba5b0a972802b0d41d7a3c3f513381905e78 0000000000000000000000000000000000000000 D	nginx/tests/test.yml

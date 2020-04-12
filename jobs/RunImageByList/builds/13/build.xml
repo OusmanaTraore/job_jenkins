@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.38">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>TAG_IMAGE</name>
+          <description></description>
+          <value>compil-31</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>TAG_IMAGE</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>84</queueId>
+  <timestamp>1585437549428</timestamp>
+  <startTime>1585437549492</startTime>
+  <result>FAILURE</result>
+  <duration>17308</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    def IMAGE = &quot;registry.gitlab.com/youssouy/docker-gitlab/version-5&quot;
+    def RUN=&quot;${IMAGE}:${TAG_IMAGE}&quot;
+    sh &quot;echo Lancement de &apos;${IMAGE}&apos; ...&quot;
+    docker.image(&quot;${IMAGE}&quot;).withRun(&apos;-p 8085:8085  --name version-${TAG_IMAGE}&apos;){c -&gt;
+        sh &apos;docker ps&apos;
+        sh &apos;sleep 10&apos;
+        sh &apos;curl localhost&apos;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>204897767</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>5003643781</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>11118895419</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>676452826</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>5802609529</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>10</iota>
+    <head>1:10</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,57 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.38">
+  <actions/>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.21">
+      <branch plugin="branch-api@2.5.5">
+        <sourceId>2a4b5670-ce5f-4728-bb6a-c1cb1dc43e20</sourceId>
+        <head class="io.jenkins.plugins.gitlabbranchsource.BranchSCMHead" plugin="gitlab-branch-source@1.4.4">
+          <name>dev</name>
+        </head>
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/dev:refs/remotes/origin/dev</refspec>
+              <url>https://gitlab.com/Youssouy/gitlab-multibranch-pipeline.git</url>
+              <credentialsId>gitlab_credential</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches class="singleton-list">
+            <hudson.plugins.git.BranchSpec>
+              <name>dev</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <browser class="io.jenkins.plugins.gitlabbranchsource.helpers.GitLabBrowser" plugin="gitlab-branch-source@1.4.4">
+            <url>https://gitlab.com//Youssouy/gitlab-multibranch-pipeline</url>
+          </browser>
+          <submoduleCfg class="empty-list"/>
+          <extensions>
+            <jenkins.plugins.git.GitSCMSourceDefaults>
+              <includeTags>false</includeTags>
+            </jenkins.plugins.git.GitSCMSourceDefaults>
+          </extensions>
+        </scm>
+        <properties/>
+        <actions>
+          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@2.6.3">
+            <objectUrl>https://gitlab.com//Youssouy/gitlab-multibranch-pipeline/tree/dev</objectUrl>
+          </jenkins.scm.api.metadata.ObjectMetadataAction>
+          <io.jenkins.plugins.gitlabbranchsource.helpers.GitLabLink plugin="gitlab-branch-source@1.4.4">
+            <iconClassName>gitlab-branch</iconClassName>
+            <url>https://gitlab.com//Youssouy/gitlab-multibranch-pipeline/tree/dev</url>
+            <displayName>Branch</displayName>
+          </io.jenkins.plugins.gitlabbranchsource.helpers.GitLabLink>
+        </actions>
+      </branch>
+    </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@2.21">
+    <scriptPath>Jenkinsfile</scriptPath>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

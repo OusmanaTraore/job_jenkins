@@ -1,0 +1,91 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>86</queueId>
+  <timestamp>1585019450999</timestamp>
+  <startTime>1585019451003</startTime>
+  <result>SUCCESS</result>
+  <duration>10398</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+    docker.image(&apos;nginx:latest&apos;).withRun(&apos;-p 8082:8082&apos;) { 
+      sh &quot;docker ps&quot;
+      sh &quot;curl localhost:8081&quot;
+    }
+        
+//    stages {
+  //       stage (&apos;Nettoyage du repertoire&apos;) {
+    //        steps {
+      //          sh &quot;  rm -Rf /var/lib/jenkins/workspace/Pipeline2/* &quot; 
+        //    }
+         //}
+           // stage (&apos;Clone&apos;) {
+            //steps {
+              //  sh &quot;git clone https://github.com/OusmanaTraore/JenkinsPipeline.git &quot;
+            //}
+        //}
+        //stage (&apos;Build&apos;) {
+          //  steps {
+            //    sh &quot;cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/ &amp;&amp; javac org/example/demo/App.java&quot;
+           //}           
+        //}
+        //stage (&apos;Run&apos;) {
+          //  steps {
+            //    sh &quot; cd /var/lib/jenkins/workspace/Pipeline2/JenkinsPipeline/MvnProject/mon-appli/src/main/java/  &amp;&amp; java org/example/demo/App  &quot;
+            //}
+        //}
+    //}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>231339661</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>711978568</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1305670682</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>37143923</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>188024562</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>13</iota>
+    <head>1:13</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

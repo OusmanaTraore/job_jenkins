@@ -1,0 +1,9 @@
+commit 8d266076af73e34f57310e27d347e6c5b52fe266
+tree d86508189d97ec359e4520c7bfac4caa400f50fb
+parent 1a9ee8613a1d4b63cdb14b1c82a246316e9c73a2
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-28 00:51:35 +0100
+committer GitHub <noreply@github.com> 2020-03-28 00:51:35 +0100
+
+    Update main.yml
+
+:100644 100644 012813a9de22df689f9cbdafb46e2b81dc83a1e2 563573ef773b8cdad7b63eb73b84b45ac316864c M	nginx/defaults/main.yml

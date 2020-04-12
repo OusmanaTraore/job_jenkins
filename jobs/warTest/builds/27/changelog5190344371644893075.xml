@@ -1,0 +1,18 @@
+commit 16afa6b812d8ab6ee18e190036af63955c6674bc
+tree 7250acc2440ddff20d2fc0e11532cf94efce36bc
+parent 0474d038593a8ad9b813ed4ad54f485d71e8d28f
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-26 14:37:34 +0100
+committer GitHub <noreply@github.com> 2020-03-26 14:37:34 +0100
+
+    Update Dockerfile
+
+:100644 100644 f1815cec06e0891a36d316562dac4080fbeea279 eb5344edf7f579ac030687a890845cc30b759875 M	Dockerfile
+commit 0474d038593a8ad9b813ed4ad54f485d71e8d28f
+tree c297477027cb4ad9661616ffd3e46a84cb8b416a
+parent 2e5356bfa76534746e59df58ec9f927008a7eaa3
+author OusmanaTraore <60136087+OusmanaTraore@users.noreply.github.com> 2020-03-26 14:36:41 +0100
+committer GitHub <noreply@github.com> 2020-03-26 14:36:41 +0100
+
+    Update Jenkinsfile
+
+:100644 100644 a8e5abeec73dcb475124d836ad1689bc6d726b20 4c288dd1a4095ff6778a142b5b40e5bc94475386 M	Jenkinsfile

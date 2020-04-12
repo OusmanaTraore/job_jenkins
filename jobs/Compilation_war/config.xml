@@ -1,0 +1,67 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.38">
+  <actions/>
+  <description>192.168.56.1:81&#xd;
+192.168.56.1:82&#xd;
+127.0.0.1:80&#xd;
+localhost&#xd;
+&#xd;
+serveur1_Master   ansible_ssh_port=2224   ansible_host_port=192.168.56.1  ansible_user=vagrant&#xd;
+serveur2_Slave    ansible_ssh_port=2225   ansible_host_port=192.168.56.1  ansible_user=vagrant&#xd;
+serveur3_Test     ansible_ssh_port=2226   ansible_host_port=192.168.56.1  ansible_user=vagrant&#xd;
+serveur4_Prod     ansible_ssh_port=2227   ansible_host_port=192.168.56.1  ansible_user=vagrant</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.14"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node{
+    
+    def registryProject=&apos;registry.gitlab.com/youssouy/docker-gitlab&apos;
+    def IMAGE= &quot;${registryProject}:compil-${env.BUILD_ID}&quot;
+    
+    stage(&apos;Build - Clone&apos;){
+        git &apos;https://github.com/OusmanaTraore/war-build-docker.git&apos;
+    }
+    stage (&apos;Build - Maven&apos;){
+        sh &apos;mvn package&apos;
+    }
+    
+    def img = stage (&apos;Docker - Build&apos;){
+        docker.build(&quot;$IMAGE&quot;, &apos;.&apos;)
+    }
+    stage (&apos;Build -Test&apos;){
+      img.withRun(&quot;--name run-$BUILD_ID -p 81:80&quot;) { 
+        sh &apos;docker ps&apos;
+        sh &apos;netstat -ntaup&apos;
+        sh &apos;sleep 5s&apos;
+        sh &apos;curl 192.168.56.1:81&apos;
+        sh &apos;docker ps&apos;
+        }
+    }
+    stage (&apos;Push&apos;) {
+        docker.withRegistry(&apos;https://registry.gitlab.com&apos;, &apos;reg1&apos;) {
+            img.push &apos;latest&apos;
+            img.push()
+        } 
+    }
+    stage (&apos;Deploy -Clone&apos;){
+        git &apos;https://github.com/OusmanaTraore/jenkins-ansible-docker-1.git&apos;
+    }
+    stage (&apos;Deploy - End&apos;){
+        ansiblePlaybook(
+            playbook: &quot;playbook.yml&quot;,
+            inventory: &quot;inventory.yml&quot;,
+//            inventory: &quot;${HOST},&quot;,
+            extras: &quot;--extra-vars &apos;image=$IMAGE&apos;&quot;,
+            colorized: true,
+            become: true 
+        
+            )
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
